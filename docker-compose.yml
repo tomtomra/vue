@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ./docker/app
+    ports:
+      - 9000:9000
+    volumes:
+      - ./www/html:/app
+    stdin_open: true
+    tty: true
+    command: /bin/sh
