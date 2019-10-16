@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build:
-      context: ./docker/app
+      context: ./docker/vue
     ports:
       - 9000:9000
     volumes:
